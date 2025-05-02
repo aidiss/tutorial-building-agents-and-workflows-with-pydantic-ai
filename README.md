@@ -18,4 +18,4 @@
 ## What is next?
 
 This repository will be updated at the start of the workshop.
-# tutorial-building-agents-and-workflows-with-pydantic-ai
+
