@@ -1,7 +1,7 @@
 [project]
 name = "pydantic-workshop-ai-lithuania"
 version = "0.1.0"
-description = "Add your description here"
+description = "For 2025-05-03 workshop in Vilnius, Lithuania"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
