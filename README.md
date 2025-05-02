@@ -2,7 +2,8 @@
 
 ## Preparation
 
-- Clone the repository:
+- Clone the repository `git clone git@github.com:aidiss/tutorial-building-agents-and-workflows-with-pydantic-ai.git`
+- Install uv environment manager: https://docs.astral.sh/uv/getting-started/installation/
 - Run `uv sync` to install the dependencies.
 - Create `.env` file:
     - See `.env.example` for an example.
@@ -18,4 +19,8 @@
 ## What is next?
 
 This repository will be updated at the start of the workshop.
+
+## Troubleshooting
+
+Raise an issue if you have any problems.
 
