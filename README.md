@@ -245,8 +245,6 @@ persistence = FileStatePersistence(Path("question_graph.json"))
 
 ###  Mermaid
 
-
-
 ```mermaid
 stateDiagram-v2
   [*] --> Ask
@@ -265,5 +263,26 @@ Task: Build a simple workflow, that updates a state, and has a graph representat
 - Remember in many cases Agents and Workflows are interchangeable.
 - Got an agent idea? Let me know, and I will help you build it.
 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
 
 ## 6. Q&A
+
+
+## Thanks
+
+We do custom AI integrations
+https://delves.ai/
