@@ -1,0 +1,10 @@
+---
+title: question_graph
+---
+stateDiagram-v2
+  [*] --> Ask
+  Ask --> Answer
+  Answer --> Evaluate
+  Evaluate --> Reprimand
+  Evaluate --> [*]
+  Reprimand --> Ask

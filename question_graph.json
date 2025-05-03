@@ -1,0 +1,718 @@
+[
+  {
+    "state": {
+      "question": null,
+      "ask_agent_messages": [],
+      "evaluate_agent_messages": []
+    },
+    "node": {
+      "node_id": "Ask"
+    },
+    "start_ts": "2025-05-03T05:20:48.555855Z",
+    "duration": 0.5548098809958901,
+    "status": "success",
+    "kind": "node",
+    "id": "Ask:bc13fc0d08ad4764ac78dd68cb9fb63a"
+  },
+  {
+    "state": {
+      "question": "What is the capital of France?",
+      "ask_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:48.558271Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is the capital of France?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:48Z",
+          "kind": "response"
+        }
+      ],
+      "evaluate_agent_messages": []
+    },
+    "node": {
+      "question": "What is the capital of France?",
+      "node_id": "Answer"
+    },
+    "start_ts": "2025-05-03T05:20:49.122489Z",
+    "duration": 3.4708588990033604,
+    "status": "success",
+    "kind": "node",
+    "id": "Answer:116b726bb9e1495ba01932966fa318a0"
+  },
+  {
+    "state": {
+      "question": "What is the capital of France?",
+      "ask_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:48.558271Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is the capital of France?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:48Z",
+          "kind": "response"
+        }
+      ],
+      "evaluate_agent_messages": []
+    },
+    "node": {
+      "answer": "Vilnius",
+      "node_id": "Evaluate"
+    },
+    "start_ts": "2025-05-03T05:20:52.615879Z",
+    "duration": 0.6792515979905147,
+    "status": "success",
+    "kind": "node",
+    "id": "Evaluate:d6d86bceb7cb412183c2375ab02485da"
+  },
+  {
+    "state": {
+      "question": "What is the capital of France?",
+      "ask_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:48.558271Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is the capital of France?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:48Z",
+          "kind": "response"
+        }
+      ],
+      "evaluate_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Given a question and answer, evaluate if the answer is correct.",
+              "timestamp": "2025-05-03T05:20:52.622855Z",
+              "dynamic_ref": null,
+              "part_kind": "system-prompt"
+            },
+            {
+              "content": "<examples>\n  <question>What is the capital of France?</question>\n  <answer>Vilnius</answer>\n</examples>",
+              "timestamp": "2025-05-03T05:20:52.622876Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "args": "{\"correct\":false,\"comment\":\"The answer is incorrect. The capital of France is Paris, not Vilnius.\"}",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "part_kind": "tool-call"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:52Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "content": "Final result processed.",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "timestamp": "2025-05-03T05:20:53.298134Z",
+              "part_kind": "tool-return"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        }
+      ]
+    },
+    "node": {
+      "comment": "The answer is incorrect. The capital of France is Paris, not Vilnius.",
+      "node_id": "Reprimand"
+    },
+    "start_ts": "2025-05-03T05:20:53.317018Z",
+    "duration": 0.00010230200132355094,
+    "status": "success",
+    "kind": "node",
+    "id": "Reprimand:b59493fdbc104ba18aca8bee225683e8"
+  },
+  {
+    "state": {
+      "question": null,
+      "ask_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:48.558271Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is the capital of France?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:48Z",
+          "kind": "response"
+        }
+      ],
+      "evaluate_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Given a question and answer, evaluate if the answer is correct.",
+              "timestamp": "2025-05-03T05:20:52.622855Z",
+              "dynamic_ref": null,
+              "part_kind": "system-prompt"
+            },
+            {
+              "content": "<examples>\n  <question>What is the capital of France?</question>\n  <answer>Vilnius</answer>\n</examples>",
+              "timestamp": "2025-05-03T05:20:52.622876Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "args": "{\"correct\":false,\"comment\":\"The answer is incorrect. The capital of France is Paris, not Vilnius.\"}",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "part_kind": "tool-call"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:52Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "content": "Final result processed.",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "timestamp": "2025-05-03T05:20:53.298134Z",
+              "part_kind": "tool-return"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        }
+      ]
+    },
+    "node": {
+      "node_id": "Ask"
+    },
+    "start_ts": "2025-05-03T05:20:53.340613Z",
+    "duration": 0.4762399689934682,
+    "status": "success",
+    "kind": "node",
+    "id": "Ask:2d99c8406a8549378ca0e5cf4722186a"
+  },
+  {
+    "state": {
+      "question": "What is 2 + 2?",
+      "ask_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:48.558271Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is the capital of France?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:48Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:48.558271Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is the capital of France?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:48Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:53.351773Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is 2 + 2?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:53Z",
+          "kind": "response"
+        }
+      ],
+      "evaluate_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Given a question and answer, evaluate if the answer is correct.",
+              "timestamp": "2025-05-03T05:20:52.622855Z",
+              "dynamic_ref": null,
+              "part_kind": "system-prompt"
+            },
+            {
+              "content": "<examples>\n  <question>What is the capital of France?</question>\n  <answer>Vilnius</answer>\n</examples>",
+              "timestamp": "2025-05-03T05:20:52.622876Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "args": "{\"correct\":false,\"comment\":\"The answer is incorrect. The capital of France is Paris, not Vilnius.\"}",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "part_kind": "tool-call"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:52Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "content": "Final result processed.",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "timestamp": "2025-05-03T05:20:53.298134Z",
+              "part_kind": "tool-return"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        }
+      ]
+    },
+    "node": {
+      "question": "What is 2 + 2?",
+      "node_id": "Answer"
+    },
+    "start_ts": "2025-05-03T05:20:53.841172Z",
+    "duration": 1.2726141040038783,
+    "status": "success",
+    "kind": "node",
+    "id": "Answer:3f6baf308fe54772bc6baf3c6410e803"
+  },
+  {
+    "state": {
+      "question": "What is 2 + 2?",
+      "ask_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:48.558271Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is the capital of France?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:48Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:48.558271Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is the capital of France?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:48Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:53.351773Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is 2 + 2?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:53Z",
+          "kind": "response"
+        }
+      ],
+      "evaluate_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Given a question and answer, evaluate if the answer is correct.",
+              "timestamp": "2025-05-03T05:20:52.622855Z",
+              "dynamic_ref": null,
+              "part_kind": "system-prompt"
+            },
+            {
+              "content": "<examples>\n  <question>What is the capital of France?</question>\n  <answer>Vilnius</answer>\n</examples>",
+              "timestamp": "2025-05-03T05:20:52.622876Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "args": "{\"correct\":false,\"comment\":\"The answer is incorrect. The capital of France is Paris, not Vilnius.\"}",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "part_kind": "tool-call"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:52Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "content": "Final result processed.",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "timestamp": "2025-05-03T05:20:53.298134Z",
+              "part_kind": "tool-return"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        }
+      ]
+    },
+    "node": {
+      "answer": "4",
+      "node_id": "Evaluate"
+    },
+    "start_ts": "2025-05-03T05:20:55.138625Z",
+    "duration": 0.5496465119940694,
+    "status": "success",
+    "kind": "node",
+    "id": "Evaluate:48783e47393c416394bf8d6eb32cf542"
+  },
+  {
+    "state": {
+      "question": "What is 2 + 2?",
+      "ask_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:48.558271Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is the capital of France?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:48Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:48.558271Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is the capital of France?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:48Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "content": "Ask a simple question with a single correct answer.",
+              "timestamp": "2025-05-03T05:20:53.351773Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "What is 2 + 2?",
+              "part_kind": "text"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:53Z",
+          "kind": "response"
+        }
+      ],
+      "evaluate_agent_messages": [
+        {
+          "parts": [
+            {
+              "content": "Given a question and answer, evaluate if the answer is correct.",
+              "timestamp": "2025-05-03T05:20:52.622855Z",
+              "dynamic_ref": null,
+              "part_kind": "system-prompt"
+            },
+            {
+              "content": "<examples>\n  <question>What is the capital of France?</question>\n  <answer>Vilnius</answer>\n</examples>",
+              "timestamp": "2025-05-03T05:20:52.622876Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "args": "{\"correct\":false,\"comment\":\"The answer is incorrect. The capital of France is Paris, not Vilnius.\"}",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "part_kind": "tool-call"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:52Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "content": "Final result processed.",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "timestamp": "2025-05-03T05:20:53.298134Z",
+              "part_kind": "tool-return"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "Given a question and answer, evaluate if the answer is correct.",
+              "timestamp": "2025-05-03T05:20:52.622855Z",
+              "dynamic_ref": null,
+              "part_kind": "system-prompt"
+            },
+            {
+              "content": "<examples>\n  <question>What is the capital of France?</question>\n  <answer>Vilnius</answer>\n</examples>",
+              "timestamp": "2025-05-03T05:20:52.622876Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "args": "{\"correct\":false,\"comment\":\"The answer is incorrect. The capital of France is Paris, not Vilnius.\"}",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "part_kind": "tool-call"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:52Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "content": "Final result processed.",
+              "tool_call_id": "call_z1pstjudwJq5gq5d9Zt3IIhY",
+              "timestamp": "2025-05-03T05:20:53.298134Z",
+              "part_kind": "tool-return"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "content": "<examples>\n  <question>What is 2 + 2?</question>\n  <answer>4</answer>\n</examples>",
+              "timestamp": "2025-05-03T05:20:55.148674Z",
+              "part_kind": "user-prompt"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "args": "{\"correct\":true,\"comment\":\"The answer is correct.\"}",
+              "tool_call_id": "call_FjfPW8NcGrGU49GZj2ayBTSI",
+              "part_kind": "tool-call"
+            }
+          ],
+          "model_name": "gpt-4o-2024-08-06",
+          "timestamp": "2025-05-03T05:20:55Z",
+          "kind": "response"
+        },
+        {
+          "parts": [
+            {
+              "tool_name": "final_result",
+              "content": "Final result processed.",
+              "tool_call_id": "call_FjfPW8NcGrGU49GZj2ayBTSI",
+              "timestamp": "2025-05-03T05:20:55.694594Z",
+              "part_kind": "tool-return"
+            }
+          ],
+          "instructions": null,
+          "kind": "request"
+        }
+      ]
+    },
+    "result": {
+      "data": "The answer is correct."
+    },
+    "ts": "2025-05-03T05:20:55.703819Z",
+    "kind": "end",
+    "id": "end:52537b68a8b6442c823dd589b39f9699"
+  }
+]
