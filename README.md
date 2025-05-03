@@ -286,6 +286,7 @@ Brainstorm with help of LLMs.
 
 Note: Show the example from claude
 
+Note: For inspiration show deepresearch and conference agent.
 ```
 
 
