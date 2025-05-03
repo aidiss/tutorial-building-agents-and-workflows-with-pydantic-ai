@@ -317,3 +317,8 @@ We do custom AI integrations: https://delves.ai/
 We are hiring: aidiss@gmail.com
 
 
+
+
+##
+
+[LastSlide](./out.pdf)
