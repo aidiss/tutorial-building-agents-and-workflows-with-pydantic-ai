@@ -183,16 +183,16 @@ It is very fresh project and LLMs do not know it well.
 Check out [Web Search](./examples/web_search_agent.py) for example.
 
 ```txt
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 ```
 
 ## 4. Workflows with pydantic-graph
