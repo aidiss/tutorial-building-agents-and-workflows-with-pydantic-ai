@@ -72,7 +72,7 @@ More than just a LLM.
 
 ### Agent 
 
-- [BasicExample](.basic_example.py)
+- [BasicExample](./basic_example.py)
 - [MultiAgent FlightBooking](./examples/flight_booking.py)
 - [Question Graph](./examples/question_graph.py)
 - [Weather Agent](./examples/weather_agent.py)
