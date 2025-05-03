@@ -282,6 +282,10 @@ Task: Build a simple workflow, that updates a state, and has a graph representat
 - Remember in many cases Agents and Workflows are interchangeable.
 - Got an agent idea? Let me know, and I will help you build it.
 
+Brainstorm with help of LLMs.
+
+Note: Show the example from claude
+
 ```
 
 
