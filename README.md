@@ -200,7 +200,7 @@ For a bonus let's check out logfire https://logfire-us.pydantic.dev/delves/demo
 
 ## 4. Workflows with pydantic-graph
 
-Agents vs Workflows
+### Agents vs Workflows
 
 - Workflows are systems where LLMs and tools are orchestrated through predefined code paths.
 - Agents, on the other hand, are systems where LLMs dynamically direct their own processes and tool usage, maintaining control over how they accomplish tasks.
@@ -211,6 +211,8 @@ Why go for workflows?
 - Accuracy
 - Price
 - Maintainability
+
+On the other hand, beware! https://ai.pydantic.dev/graph/
 
 ### Node
 
