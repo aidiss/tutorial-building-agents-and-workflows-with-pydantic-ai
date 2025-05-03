@@ -17,5 +17,5 @@ agent = Agent(
 )
 
 if __name__ == "__main__":
-    response = agent.run_sync("What is the best way to learn Python?")
+    response = agent.run_sync("Find LLM Agent frameworks")
     print(response)
