@@ -74,7 +74,6 @@ More than just a LLM.
 
 - [BasicExample](./basic_example.py)
 - [MultiAgent FlightBooking](./examples/flight_booking.py)
-- [Question Graph](./examples/question_graph.py)
 - [Weather Agent](./examples/weather_agent.py)
 
 
@@ -250,6 +249,8 @@ Graph(
     nodes=(Ask, Answer, Evaluate, Reprimand), state_type=QuestionState
 )
 ```
+
+- [Question Graph Agent](./examples/question_graph.py)
 
 ### State Persistence
 
