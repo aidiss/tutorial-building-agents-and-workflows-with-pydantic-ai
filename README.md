@@ -1,6 +1,6 @@
 # Tutorial: Building Agents and Workflows with pydantic-ai and pydantic-graph
 
-# https://github.com/aidiss/tutorial-building-agents-and-workflows-with-pydantic-ai.git
+# https://github.com/aidiss/tutorial-building-agents-and-workflows-with-pydantic-ai
 
 ## Preparation
 
@@ -46,7 +46,7 @@ Raise an issue if you have any problems.
   - Let's use type hints to make our code more readable and maintainable.
 - If someone would ask you what single library you would pick if you could only pick one, it would be pydantic.
 - It is synonymous with modern python.
-- The ecosystem: pydantic, pydantic-ai, pydantic-evals
+- The ecosystem: pydantic, pydantic-ai, pydantic-graphs, pydantic-evals, logfire
 - https://pypistats.org/packages/pydantic
 
 
@@ -68,7 +68,6 @@ More than just a LLM.
 - AI Agents are programs where LLM outputs control the workflow. (Hugging Face, smolagents)
 - An artificial intelligence (AI) agent refers to a system or program that is capable of autonomously performing tasks on behalf of a user or another system by designing its workflow and utilizing available tools. (IBM)
 - Agents are systems where LLMs dynamically direct their own processes and tool usage, maintaining control over how they accomplish tasks. (Anhtropic)
-
 - https://www.anthropic.com/engineering/building-effective-agents
 
 ### Agent 
@@ -137,21 +136,23 @@ deps = MyDeps("foobar", httpx.Client())
 
 ```py
 @agent.tool
-def get_player_name(ctx: RunContext[str]) -> str:
+def get_player_name(ctx: RunContext[MyDeps]) -> str:
     """Get the player's name."""
     return ctx.deps.user_name
 ```
 
 ### MultiAgent
 
+Sometimes an agent with bunch of tools is not enough.
+
 - [Joke Agent - Agent delegation/Router](./examples/joke_agent.py)
 - [Flight Booking - Programmatic handoff](./examples/flight_booking.py)
-
 
 
 ## 2. More info on exercises
 
 ### Easy version
+
 - Modify any of the existing examples.
   - Change the prompt.
   - Remove or add a tool.
@@ -284,5 +285,8 @@ Task: Build a simple workflow, that updates a state, and has a graph representat
 
 ## Thanks
 
-We do custom AI integrations
-https://delves.ai/
+We do custom AI integrations: https://delves.ai/
+
+We are hiring: aidiss@gmail.com
+
+
