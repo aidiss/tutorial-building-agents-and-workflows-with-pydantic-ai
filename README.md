@@ -179,6 +179,8 @@ But make sure you include documentations.
 
 It is very fresh project and LLMs do not know it well.
 
+Did you know the llms.txt? https://docs.pydantic.dev/latest/llms.txt
+
 Check out [Web Search](./examples/web_search_agent.py) for example.
 
 For a bonus let's check out logfire https://logfire-us.pydantic.dev/delves/demo
